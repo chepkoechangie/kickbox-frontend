@@ -11,7 +11,7 @@ const EachProduct = ({ productsList, setProductsList }) => {
   const { id } = useParams()
   const shoe = productsList.find(shoe => shoe.id === Number(id))
 
-  const renderReviews = shoe.reviews.map((review) => <EachReview key={review.id} review={review} />)
+  const renderReviews = shoe.reviews.map((review) => <EachReview key={review.id} review={review} setComment={setComment} setRating={setRating}/>)
 
   function handleAdd(event) {
     event.preventDefault()
@@ -46,7 +46,7 @@ const EachProduct = ({ productsList, setProductsList }) => {
 
 
    
-    fetch(`http://localhost:9393/reviews`, {
+    fetch(`http://localhost:9292/reviews`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -68,8 +68,8 @@ const EachProduct = ({ productsList, setProductsList }) => {
 
   return (
     <section className='border border-violet-600 bg-gray-800/90 text-slate-200/100 flex m-10'>
-      <img src={shoe.img_url} alt="product appearance" style={{width: '50%'}} />
-      <article className='px-6 py-4 m-10'>
+      <img src={shoe.img_url} alt="product appearance" style={{width: '50%', height: '50%'}} />
+      <article className='px-6 py-4 m-10 w-full'>
         <button onClick={() => navigate("/products")} className="bg-sky-500 m-2 p-2 rounded-md hover:bg-blue-800 col-start-1 text-slate-200 disabled:opacity-0 " >Go back</button>
         <h2 className="text-violet-600/100 text-2xl font-bold">{shoe.product_name}</h2>
         <p className='text-slate-200/100 my-2'>{shoe.description}</p>
@@ -97,7 +97,8 @@ const EachProduct = ({ productsList, setProductsList }) => {
                 value={rating}
                 onChange={(e) => setRating(e.target.value)}
             />
-            <button className="bg-sky-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200" >Add Review</button>
+            <button className="bg-sky-500 m-2 p-2 rounded-md hover:bg-lime-500 col-start-1 text-slate-200 disabled:opacity-0 " >Add Review</button>
+
           </form>
         </article>
         <article className='my-10' id='reviews-container'>    
