@@ -14,14 +14,14 @@ React for the frontend.
 - Ruby 
 
 ## Installation process
-- Clone the repo:
+- Fork the project to your local computer.
 
-- Unzip the downloaded files in a folder of choice.
+- Run npm install to install required dependencies.
 
-- Open the index files from the zipped file with any browser.
+- Run npm start to run the application on your browser.
 
 ## Link
-https://kickbox-sneakers.netlify.app/
+- https://kickbox-sneakers.netlify.app/
 
 ## contributors
 - Roy Okite
