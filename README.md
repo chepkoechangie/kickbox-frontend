@@ -24,7 +24,7 @@ React for the frontend.
 https://kickbox-sneakers.netlify.app/
 
 ## contributors
--Roy Okite
--Titus Muteti
--Angela Chepkoech
--Ruth Wekesa
+- Roy Okite
+- Titus Muteti
+- Angela Chepkoech
+- Ruth Wekesa
