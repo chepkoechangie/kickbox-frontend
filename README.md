@@ -7,7 +7,9 @@ We created Kick-box since we wanted give our priority to manufacturers less like
 ## Technologies
 React for the frontend.
 
-- CSS 
+- React
+
+- CSS / Tailwind
 
 - HTML
 
