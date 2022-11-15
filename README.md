@@ -1,4 +1,4 @@
-#Kickbox
+# Kickbox
 
 ## INTRODUCTION
 Kick-box is an e-commerce website basically for shoes.We came up with it to solve the problem of Competition against retailers and manufacturers due to the low barrier entry to e-commerce has led to a drop in quality and options as giants control the manufacture and supply of products,in our case,shoes. The same company that sells us products may also be our competitor,with no desire for invention in a large market share.
@@ -20,10 +20,10 @@ React for the frontend.
 
 - Open the index files from the zipped file with any browser.
 
-##Link
+## Link
 https://kickbox-sneakers.netlify.app/
 
-##contributors
+## contributors
 -Roy Okite
 -Titus Muteti
 -Angela Chepkoech
